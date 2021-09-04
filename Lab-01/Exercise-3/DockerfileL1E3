@@ -1,0 +1,11 @@
+FROM python:3
+
+COPY L1E3/ /./
+
+CMD ["print.py"]
+
+ENTRYPOINT ["python3"]
+
+# FROM ubuntu
+# COPY L1E3/ /home/
+# CMD bash
