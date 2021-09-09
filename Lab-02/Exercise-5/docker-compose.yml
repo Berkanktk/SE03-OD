@@ -1,0 +1,12 @@
+version: '3'
+services: 
+  db_container: 
+    build: /Users/berkankutuk/Documents/OD-LAB/Lab-02/Exercise-4
+    command: --default-authentication-plugin=mysql_native_password
+  
+  web:
+    build:  /Users/berkankutuk/Documents/OD-LAB/Lab-02/Exercise-2
+    depends_on: 
+    - db_container
+    ports: 
+      - '7000:80'
