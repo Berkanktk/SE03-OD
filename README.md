@@ -1,4 +1,4 @@
-# Topics for the different lessons
+# Topics for the different lectures
 ## Lesson 1
 * Docker
 
