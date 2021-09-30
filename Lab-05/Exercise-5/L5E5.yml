@@ -1,0 +1,20 @@
+# L5E5.yml
+apiVersion: apps/v1    
+kind: Deployment       
+metadata:
+  name: berkan-test
+spec:
+  selector:
+    matchLabels:       
+      component: berkan
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component: berkan
+    spec:
+      containers:
+        - name: spekt8
+          image: ahmadhamid/spekt8
+          ports:
+            - containerPort: 3000

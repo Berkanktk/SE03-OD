@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    sql:
+        image: muggel/lab2exercise4:latest
+        command: --default-authentication-plugin=mysql_native_password
+    
+    web:
+        image: muggel/lab2exercise2:latest
+        depends_on:
+            - sql
+
+        ports:
+            - '5050:80'
