@@ -13,3 +13,7 @@
 * Protocols
 * Rest API (flask)
 * Wireshark
+
+## Lesson 5
+* SSL - Certificates
+* Kubernetes
