@@ -17,3 +17,6 @@
 ## Lesson 5
 * SSL - Certificates
 * Kubernetes
+
+## Lesson 6
+* Operating Systems
