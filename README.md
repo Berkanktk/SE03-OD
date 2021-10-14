@@ -20,3 +20,6 @@
 
 ## Lesson 6
 * Operating Systems
+
+## Lesson 7
+* Storage
