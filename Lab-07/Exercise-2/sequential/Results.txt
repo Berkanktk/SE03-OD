@@ -1,0 +1,3 @@
+Did not work
+
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: dockerfile parse error line 1: unknown instruction: ROM

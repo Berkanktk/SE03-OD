@@ -1,0 +1,92 @@
+file1: (g=0): rw=randwrite, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=16
+...
+fio-3.16
+Starting 4 processes
+file1: Laying out IO file (1 file / 10240MiB)
+file1: Laying out IO file (1 file / 10240MiB)
+file1: Laying out IO file (1 file / 10240MiB)
+file1: Laying out IO file (1 file / 10240MiB)
+fio: io_u error on file fio-rand-write: No space left on device: write offset=10481987584, buflen=4096
+fio: pid=15, err=28/file:io_u.c:1787, func=io_u error, error=No space left on device
+fio: io_u error on file fio-rand-write: No space left on device: write offset=10416791552, buflen=4096
+fio: pid=16, err=28/file:io_u.c:1787, func=io_u error, error=No space left on device
+fio: pid=17, err=28/file:io_u.c:1787, func=io_u error, error=No space left on device
+fio: io_u error on file fio-rand-write: No space left on device: write offset=10508120064, buflen=4096
+fio: io_u error on file fio-rand-write: No space left on device: write offset=10601484288, buflen=4096
+fio: pid=14, err=28/file:io_u.c:1787, func=io_u error, error=No space left on device
+
+file1: (groupid=0, jobs=1): err=28 (file:io_u.c:1787, func=io_u error, error=No space left on device): pid=14: Thu Oct 14 21:07:35 2021
+  write: IOPS=8200, BW=19.5MiB/s (20.5MB/s)(100KiB/5msec); 0 zone resets
+    slat (usec): min=4, max=1023, avg=44.64, stdev=162.36
+    clat (usec): min=176, max=693, avg=431.10, stdev=216.42
+     lat (usec): min=187, max=1201, avg=483.53, stdev=258.02
+    clat percentiles (usec):
+     |  1.00th=[  178],  5.00th=[  178], 10.00th=[  210], 20.00th=[  231],
+     | 30.00th=[  237], 40.00th=[  258], 50.00th=[  285], 60.00th=[  611],
+     | 70.00th=[  660], 80.00th=[  676], 90.00th=[  685], 95.00th=[  693],
+     | 99.00th=[  693], 99.50th=[  693], 99.90th=[  693], 99.95th=[  693],
+     | 99.99th=[  693]
+  lat (usec)   : 250=19.51%, 500=14.63%, 750=26.83%
+  cpu          : usr=0.00%, sys=25.00%, ctx=14, majf=0, minf=20
+  IO depths    : 1=2.4%, 2=4.9%, 4=9.8%, 8=19.5%, 16=63.4%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,41,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+file1: (groupid=0, jobs=1): err=28 (file:io_u.c:1787, func=io_u error, error=No space left on device): pid=15: Thu Oct 14 21:07:35 2021
+  write: IOPS=30.0k, BW=54.7MiB/s (57.3MB/s)(56.0KiB/1msec); 0 zone resets
+    slat (usec): min=4, max=136, avg=11.12, stdev=24.55
+    clat (usec): min=227, max=235, avg=231.39, stdev= 2.71
+     lat (usec): min=233, max=269, avg=239.82, stdev= 9.04
+    clat percentiles (usec):
+     |  1.00th=[  229],  5.00th=[  229], 10.00th=[  229], 20.00th=[  229],
+     | 30.00th=[  229], 40.00th=[  231], 50.00th=[  231], 60.00th=[  233],
+     | 70.00th=[  233], 80.00th=[  235], 90.00th=[  237], 95.00th=[  237],
+     | 99.00th=[  237], 99.50th=[  237], 99.90th=[  237], 99.95th=[  237],
+     | 99.99th=[  237]
+  lat (usec)   : 250=46.67%
+  cpu          : usr=0.00%, sys=0.00%, ctx=0, majf=0, minf=21
+  IO depths    : 1=3.3%, 2=6.7%, 4=13.3%, 8=26.7%, 16=50.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,30,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+file1: (groupid=0, jobs=1): err=28 (file:io_u.c:1787, func=io_u error, error=No space left on device): pid=16: Thu Oct 14 21:07:35 2021
+  write: IOPS=6333, BW=4000KiB/s (4096kB/s)(12.0KiB/3msec); 0 zone resets
+    slat (usec): min=6, max=512, avg=47.26, stdev=116.68
+    clat (usec): min=306, max=396, avg=358.46, stdev=46.41
+     lat (usec): min=341, max=403, avg=376.05, stdev=31.54
+    clat percentiles (usec):
+     |  1.00th=[  306],  5.00th=[  306], 10.00th=[  306], 20.00th=[  306],
+     | 30.00th=[  306], 40.00th=[  371], 50.00th=[  371], 60.00th=[  371],
+     | 70.00th=[  396], 80.00th=[  396], 90.00th=[  396], 95.00th=[  396],
+     | 99.00th=[  396], 99.50th=[  396], 99.90th=[  396], 99.95th=[  396],
+     | 99.99th=[  396]
+  lat (usec)   : 500=15.79%
+  cpu          : usr=0.00%, sys=50.00%, ctx=9, majf=0, minf=24
+  IO depths    : 1=5.3%, 2=10.5%, 4=21.1%, 8=42.1%, 16=21.1%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,19,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+file1: (groupid=0, jobs=1): err=28 (file:io_u.c:1787, func=io_u error, error=No space left on device): pid=17: Thu Oct 14 21:07:35 2021
+  write: IOPS=5750, BW=7000KiB/s (7168kB/s)(28.0KiB/4msec); 0 zone resets
+    slat (usec): min=10, max=576, avg=51.75, stdev=115.14
+    clat (usec): min=390, max=466, avg=438.56, stdev=32.71
+     lat (usec): min=435, max=985, avg=544.78, stdev=195.67
+    clat percentiles (usec):
+     |  1.00th=[  392],  5.00th=[  392], 10.00th=[  392], 20.00th=[  408],
+     | 30.00th=[  416], 40.00th=[  416], 50.00th=[  461], 60.00th=[  461],
+     | 70.00th=[  461], 80.00th=[  465], 90.00th=[  465], 95.00th=[  465],
+     | 99.00th=[  465], 99.50th=[  465], 99.90th=[  465], 99.95th=[  465],
+     | 99.99th=[  465]
+  lat (usec)   : 500=30.43%
+  cpu          : usr=0.00%, sys=100.00%, ctx=8, majf=0, minf=19
+  IO depths    : 1=4.3%, 2=8.7%, 4=17.4%, 8=34.8%, 16=34.8%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,23,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+
+Run status group 0 (all jobs):
+  WRITE: bw=38.3MiB/s (40.1MB/s), 4000KiB/s-54.7MiB/s (4096kB/s-57.3MB/s), io=196KiB (201kB), run=1-5msec
