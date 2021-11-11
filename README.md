@@ -1,29 +1,36 @@
 # Topics for the different lectures
-## Lesson 1
+## Lecture 1
 * Docker
 
-## Lesson 2
+## Lecture 2
 * Docker Compose
 
-## Lesson 3
+## Lecture 3
 * Networking
 * Linux tools
 
-## Lesson 4
+## Lecture 4
 * Protocols
 * Rest API (flask)
 * Wireshark
 
-## Lesson 5
+## Lecture 5
 * SSL - Certificates
 * Kubernetes
 
-## Lesson 6
+## Lecture 6
 * Operating Systems
 
-## Lesson 7
-* Storage
+## Lecture 7
+* File Systems
+* Fuse
+* mySQL
 
-## Lesson 8
+## Lecture 8
 * Multitasking
-* Threads
+* Threading
+
+## Lecture 9
+* Inter Process Communication
+* DockerDaemon
+* REST
