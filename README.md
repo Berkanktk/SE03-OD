@@ -23,3 +23,7 @@
 
 ## Lesson 7
 * Storage
+
+## Lesson 8
+* Multitasking
+* Threads
